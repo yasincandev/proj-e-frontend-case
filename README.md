@@ -25,4 +25,3 @@ This project is a test case for the frontend developer position at Proj-e Yazıl
 
 [@yasincandev](https://linkedin.com/in/yasincandev) - yasiican@outlook.com
 
-Demo: [https://cherry-shop.vercel.app/](https://cherry-shop.vercel.app/)
