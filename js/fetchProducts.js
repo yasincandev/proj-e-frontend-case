@@ -1,11 +1,11 @@
 const getCart = () => {
-  return JSON.parse(localStorage.getItem("cart")) ?? [];
+  return JSON.parse(localStorage.getItem('cart')) ?? [];
 };
 
 const updateCartCount = () => {
   const newCart = getCart();
-  const cartCount = document.querySelector(".cart-count");
-  cartCount.style.display = "flex";
+  const cartCount = document.querySelector('.cart-count');
+  cartCount.style.display = 'flex';
   cartCount.innerHTML = newCart.length;
 };
 
@@ -36,7 +36,7 @@ const appendProductsToDom = (productListContainer, product) => {
       <span class="name">${product.title}</span>
       <h4 class="price">₺${product.price}</h4>
       <span class="shipping-today ${
-        product.samedayshipping && "show"
+        product.samedayshipping && 'show'
       }"> BUGUN KARGODA </span>
       <button class="add-to-cart" data-productId="${
         product.code
@@ -54,22 +54,26 @@ const appendProductsToDom = (productListContainer, product) => {
 const addToCart = (productCode) => {
   let cart = getCart();
   cart.push(productCode);
-  localStorage.setItem("cart", JSON.stringify(cart));
+  localStorage.setItem('cart', JSON.stringify(cart));
   updateCartCount();
+  vNotify.success({
+    text: 'Ürün sepete eklendi',
+    showClose: true,
+  });
 };
 
-const relatedProductList = document.querySelector(".product-list.related");
+const relatedProductList = document.querySelector('.product-list.related');
 const bestSellerProductList = document.querySelector(
-  ".product-list.best-seller"
+  '.product-list.best-seller'
 );
 
-fetch("../data/relatedProducts.json")
+fetch('../data/relatedProducts.json')
   .then((response) => response.json())
   .then((data) => {
     data.forEach((product) => appendProductsToDom(relatedProductList, product));
   });
 
-fetch("../data/bestSeller.json")
+fetch('../data/bestSeller.json')
   .then((response) => response.json())
   .then((data) => {
     data.forEach((product) =>

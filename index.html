@@ -15,11 +15,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/slider.css" />
     <link rel="stylesheet" href="css/products.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/vanilla-notify.css" />
   </head>
   <body>
     <main>
@@ -49,27 +51,26 @@
       </header>
       <section class="products-slider">
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper mySwiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img src="https://via.placeholder.com/100" />
+              <img src="./assets/images/sony-walkman.png" />
             </div>
             <div class="swiper-slide">
-              <img src="https://via.placeholder.com/100" />
+              <img src="./assets/images/lg-tv.png" />
+
+              <img src="./assets/images/general-mobile.png" />
             </div>
             <div class="swiper-slide">
-              <img src="https://via.placeholder.com/100" />
+              <img src="https://via.placeholder.com/200" />
             </div>
             <div class="swiper-slide">
-              <img src="https://via.placeholder.com/100" />
+              <img src="https://via.placeholder.com/200" />
             </div>
             <div class="swiper-slide">
-              <img src="https://via.placeholder.com/100" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://via.placeholder.com/100" />
+              <img src="https://via.placeholder.com/200" />
             </div>
           </div>
           <!-- If we need pagination -->
@@ -162,7 +163,7 @@
         <hr />
         <div class="footer-bottom">
           <div class="copyright-container">
-            <span> Türkiye'nin Teknoloji Hiperstoru </span>
+            <p>Türkiye'nin Teknoloji Hiperstoru</p>
             <span> Copyright 2016 Vatan Bilgisayar San. ve Tic. A.Ş. </span>
           </div>
           <div class="payments">
@@ -180,5 +181,6 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/initializeSwiper.js"></script>
+    <script src="./js/vanilla-notify.js"></script>
   </body>
 </html>

@@ -9,11 +9,12 @@ footer {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 52px;
   }
   .footer-links-sections {
     display: flex;
     flex-direction: column;
+    gap: 3px;
 
     p {
       font-size: 12px;
@@ -39,14 +40,29 @@ footer {
     }
   }
   .footer-bottom {
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 32px;
   }
   .copyright-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 32px;
+    p {
+      color: gray;
+      font-size: 12px;
+      margin-bottom: 0.5rem;
+    }
+    span {
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 10px;
+    }
+  }
+  hr {
+    width: 100%;
   }
 }
