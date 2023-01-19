@@ -1,0 +1,16 @@
+:root {
+  --primary-blue: #1364bf;
+  --secondary-blue: #4382cb;
+  --tertiary-blue: #2396f3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 1600px;
+  min-height: 100vh;
+  padding-bottom: 32px;
+  margin: 0 auto;
+}

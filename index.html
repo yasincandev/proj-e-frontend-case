@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Proj-e Frontend Test</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="content container">
+          <img src="./assets/images/vatanlogo.svg" class="logo" />
+          <div class="header-item categories">
+            <img src="./assets/icons/bars.svg" width="20px" />
+            Kategoriler
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Ürün ara" />
+            <img src="./assets/icons/search.svg" width="18px" class="icon" />
+          </div>
+          <div class="header-item membership">
+            Üyelik
+            <img src="./assets/icons/user.svg" width="24px" />
+          </div>
+          <div class="header-item cart">
+            Sepetim
+            <span class="icon">
+              <img src="./assets/icons/cart.svg" width="24px" />
+              <span class="cart-count"></span>
+            </span>
+          </div>
+        </div>
+      </header>
+      <section class="products-slider">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/100" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/100" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/100" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/100" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/100" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/100" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <section class="container product-section related">
+        <div class="header">
+          <h4>Öne çıkan ürünler</h4>
+          <span class="all-products-button">
+            TÜM ÖNE ÇIKANLAR
+            <img src="./assets/icons/arrow-right.svg" alt="" width="12px" />
+          </span>
+        </div>
+        <div class="product-list related"></div>
+      </section>
+      <section class="container product-section best-seller">
+        <div class="header">
+          <h4>Çok satanlar</h4>
+          <span class="all-products-button">
+            TÜM ÇOK SATANLAR
+            <img src="./assets/icons/arrow-right.svg" alt="" width="12px" />
+          </span>
+        </div>
+        <div class="product-list best-seller"></div>
+      </section>
+      <footer>
+        <div class="footer-links-container">
+          <div class="footer-links-sections">
+            <p class="footer-title">KURUMSAL</p>
+            <div class="footer-links">
+              <ul>
+                <li>Hakkımızda</li>
+                <li>Müşteri Hizmetleri</li>
+                <li>Sipariş Aşamaları</li>
+                <li>Sıkça Sorulan Sorular</li>
+                <li>İnsan Kaynakları</li>
+                <li>Gizlilik Politikamız</li>
+              </ul>
+
+              <ul>
+                <li>İletişim</li>
+                <li>Vatan Card</li>
+                <li>Servis Takip Formu</li>
+                <li>Mağazalar</li>
+                <li>İşlem Rehberi</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links-sections">
+            <p class="footer-title">KATEGORİLER</p>
+            <div class="footer-links">
+              <ul>
+                <li>Bilgisayar</li>
+                <li>Cep Telefonu</li>
+                <li>Tablet PC</li>
+                <li>Akıllı Saat</li>
+                <li>Vestel TV</li>
+                <li>Oyun Bilgisayarı</li>
+              </ul>
+
+              <ul>
+                <li>Küçük Ev Aletleri</li>
+                <li>Kişisel Bakım Ürünleri</li>
+                <li>Elektrikli Süpürge</li>
+                <li>Ütü</li>
+                <li>Masaüstü Bilgisayar</li>
+                <li>Sabit Diskler</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-links-sections">
+            <p>ÖZEL ÜRÜNLER</p>
+            <ul>
+              <li>İphone 7</li>
+              <li>İphone 6S</li>
+              <li>İphone 5S</li>
+              <li>İphone SE</li>
+              <li>General Mobile 5 Plus</li>
+              <li>Galaxy S7</li>
+              <li>Note 5</li>
+              <li>Galaxy S6</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="copyright-container">
+            <span> Türkiye'nin Teknoloji Hiperstoru </span>
+            <span> Copyright 2016 Vatan Bilgisayar San. ve Tic. A.Ş. </span>
+          </div>
+          <div class="payments">
+            <img src="./assets/images/payment-types.webp" alt="" />
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./js/fetchProducts.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/js/initializeSwiper.js"></script>
+  </body>
+</html>

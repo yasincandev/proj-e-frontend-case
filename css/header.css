@@ -1,0 +1,95 @@
+header {
+  display: flex;
+  width: 100%;
+  background-color: var(--primary-blue);
+}
+header .content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 20px;
+  background-color: var(--primary-blue);
+  padding-top: 8px;
+  padding-bottom: 16px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 125px;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-size: 14px;
+}
+.header-item.cart .icon {
+  position: relative;
+}
+.header-item.cart .icon .cart-count {
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  background-color: white;
+  color: var(--primary-blue);
+  font-size: 9px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-blue);
+  border-radius: 4px;
+  flex: 1;
+  height: 100%;
+  position: relative;
+  margin: 0 10px;
+}
+.search-bar input {
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.search-bar input:-moz-placeholder-shown + .icon {
+  display: block;
+}
+.search-bar input:-ms-input-placeholder + .icon {
+  display: block;
+}
+.search-bar input:placeholder-shown + .icon {
+  display: block;
+}
+.search-bar input:focus {
+  outline: none;
+}
+.search-bar input::-moz-placeholder {
+  color: white;
+  font-size: 14px;
+}
+.search-bar input:-ms-input-placeholder {
+  color: white;
+  font-size: 14px;
+}
+.search-bar input::placeholder {
+  color: white;
+  font-size: 14px;
+}
+.search-bar .icon {
+  display: none;
+  position: absolute;
+  left: 43%;
+  top: 50%;
+  transform: translate(-43%, -50%);
+}/*# sourceMappingURL=header.css.map */
