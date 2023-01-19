@@ -2,6 +2,7 @@ header {
   display: flex;
   width: 100%;
   background-color: var(--primary-blue);
+  position: relative;
   .content {
     display: flex;
     align-items: center;
@@ -79,5 +80,103 @@ header {
     left: 43%;
     top: 50%;
     transform: translate(-43%, -50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .content {
+      display: none;
+    }
+    .mobile-menu-button {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding: 1rem;
+      width: 100%;
+      height: 100%;
+
+      .close {
+        width: 25px;
+        display: none;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .mobile-menu {
+      position: absolute;
+      top: 50px;
+      padding: 1rem;
+      right: 0;
+      display: none;
+      justify-content: space-between;
+      width: 100%;
+      height: 30vh;
+      z-index: 4;
+      color: white;
+      background-color: var(--secondary-blue);
+      transition: all 0.3s ease-in-out;
+      -webkit-animation: mobile-menu 0.6s
+        cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+      animation: mobile-menu 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+
+      .mobile-menu-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+
+        .mobile-menu-item {
+          display: flex;
+          gap: 0.5rem;
+
+          .icon {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mobile-menu-button {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+
+@-webkit-keyframes mobile-menu {
+  0% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes mobile-menu {
+  0% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    opacity: 1;
   }
 }

@@ -66,3 +66,21 @@ footer {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer-links-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer-links-sections {
+    margin-bottom: 32px;
+    align-items: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 32px;
+    img {
+      width: 100%;
+    }
+  }
+}

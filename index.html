@@ -48,6 +48,33 @@
             </span>
           </div>
         </div>
+        <div class="mobile-menu-button">
+          <img src="./assets/icons/bars.svg" width="24px" class="open" />
+          <img src="./assets/icons/close.svg" class="close" />
+        </div>
+        <div class="mobile-menu">
+          <div class="mobile-menu-header">
+            <img src="./assets/images/vatanlogo.svg" class="logo" />
+          </div>
+          <div class="mobile-menu-content">
+            <div class="mobile-menu-item">
+              <img src="./assets/icons/bars.svg" width="20px" />
+              Kategoriler
+            </div>
+            <div class="mobile-menu-item">
+              <img src="./assets/icons/search.svg" width="18px" />
+              Ürün ara
+            </div>
+            <div class="mobile-menu-item">
+              <img src="./assets/icons/user.svg" width="24px" />
+              Üyelik
+            </div>
+            <div class="mobile-menu-item">
+              <img src="./assets/icons/cart.svg" width="24px" />
+              Sepetim
+            </div>
+          </div>
+        </div>
       </header>
       <section class="products-slider">
         <!-- Slider main container -->
@@ -182,5 +209,23 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="/js/initializeSwiper.js"></script>
     <script src="./js/vanilla-notify.js"></script>
+    <script>
+      const hamburgerMenuOpenButton = document.querySelector('.open');
+      const hamburgerMenuCloseButton = document.querySelector('.close');
+      const mobileMenu = document.querySelector('.mobile-menu');
+
+      hamburgerMenuOpenButton.addEventListener('click', () => {
+        //add display flex to mobile menu
+        mobileMenu.style.display = 'flex';
+        hamburgerMenuOpenButton.style.display = 'none';
+        hamburgerMenuCloseButton.style.display = 'block';
+      });
+
+      hamburgerMenuCloseButton.addEventListener('click', () => {
+        mobileMenu.style.display = 'none';
+        hamburgerMenuOpenButton.style.display = 'block';
+        hamburgerMenuCloseButton.style.display = 'none';
+      });
+    </script>
   </body>
 </html>
