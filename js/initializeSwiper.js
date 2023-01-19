@@ -1,14 +1,13 @@
 const swiper = new Swiper('.swiper', {
   effect: 'coverflow',
-  direction: 'horizontal',
   grabCursor: true,
-
   loop: true,
+  spaceBetween: 20,
   slidesPerView: 2,
   coverflowEffect: {
     rotate: 0,
-    stretch: -30,
-    depth: 150,
+    stretch: 0,
+    depth: 800,
     modifier: 1,
     slideShadows: true,
   },
