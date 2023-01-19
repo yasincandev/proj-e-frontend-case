@@ -144,6 +144,25 @@ header .content {
   header .mobile-menu .mobile-menu-content .mobile-menu-item .icon {
     width: 25px;
   }
+  header .mobile-menu .mobile-menu-content .mobile-menu-item .cart {
+    position: relative;
+  }
+  header .mobile-menu .mobile-menu-content .mobile-menu-item .cart .cart-count-mobile {
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    background-color: white;
+    color: var(--primary-blue);
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 100;
+  }
 }
 .mobile-menu-button {
   display: none;

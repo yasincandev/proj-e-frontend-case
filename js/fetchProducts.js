@@ -5,8 +5,12 @@ const getCart = () => {
 const updateCartCount = () => {
   const newCart = getCart();
   const cartCount = document.querySelector('.cart-count');
+  const cartCountMobile = document.querySelector('.cart-count-mobile');
+
   cartCount.style.display = 'flex';
+  cartCountMobile.style.display = 'flex';
   cartCount.innerHTML = newCart.length;
+  cartCountMobile.innerHTML = newCart.length;
 };
 
 const checkCartInitial = () => {

@@ -135,6 +135,26 @@ header {
           .icon {
             width: 25px;
           }
+          .cart {
+            position: relative;
+
+            .cart-count-mobile {
+              position: absolute;
+              top: -1px;
+              right: -5px;
+              background-color: white;
+              color: var(--primary-blue);
+              font-size: 9px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              font-weight: bold;
+              z-index: 100;
+            }
+          }
         }
       }
     }
