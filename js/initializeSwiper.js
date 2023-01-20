@@ -47,9 +47,13 @@ const swiper = new Swiper('.swiper', {
 
 const bestSwiper = new Swiper('.mySwiper', {
   // Optional parameters
+  grabCursor: true,
   loop: true,
-  slidesPerView: 5,
-
+  spaceBetween: 20,
+  loopFillGroupWithBlank: false,
+  loop: true,
+  slidesPerView: 4,
+  grabCursor: true,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-best-button-next',
