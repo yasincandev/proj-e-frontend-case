@@ -15,11 +15,10 @@ This project is a test case for the frontend developer position at Proj-e Yazıl
 
 ## :star2: About the Project
 
-
-
-
+<div align="center"> 
+  <img src="https://i.ibb.co/tm8JXFS/127-0-0-1-5500-index-html.png" alt="screenshot" />
+</div>
 
 ## :handshake: Contact
 
 [@yasincandev](https://linkedin.com/in/yasincandev) - yasiican@outlook.com
-
