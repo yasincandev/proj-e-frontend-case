@@ -23,6 +23,11 @@
   border: 1px solid lightgray;
 }
 
+.best-seller-swiper {
+  display: flex;
+  border: 1px solid lightgray;
+}
+
 .product {
   display: flex;
   flex-direction: column;

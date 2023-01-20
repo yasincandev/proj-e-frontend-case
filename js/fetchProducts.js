@@ -23,7 +23,7 @@ checkCartInitial();
 
 const appendProductsToDom = (productListContainer, product) => {
   const productItem = `
-      <div class="product">
+      <div class="product swiper-slide ">
       <img
         src="${product.img}"
         alt="product"
@@ -67,9 +67,7 @@ const addToCart = (productCode) => {
 };
 
 const relatedProductList = document.querySelector('.product-list.related');
-const bestSellerProductList = document.querySelector(
-  '.product-list.best-seller'
-);
+const bestSellerProductList = document.querySelector('.best-seller-swiper');
 
 fetch('../data/relatedProducts.json')
   .then((response) => response.json())

@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper', {
   grabCursor: true,
   loop: true,
   spaceBetween: 20,
+  loopFillGroupWithBlank: false,
   slidesPerView: 2,
   coverflowEffect: {
     rotate: 0,
@@ -40,6 +41,37 @@ const swiper = new Swiper('.swiper', {
     1024: {
       slidesPerView: 2,
       spaceBetween: 20,
+    },
+  },
+});
+
+const bestSwiper = new Swiper('.mySwiper', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 5,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-best-button-next',
+    prevEl: '.swiper-best-button-prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 0,
     },
   },
 });
